@@ -32,4 +32,11 @@ public class SquareAsRect extends Rectangle {
     public void draw() {
         System.out.println("Draw square side = " + getWidth());
     }
+
+    @Override
+    public int compareTo(MultiAngle sq){
+        return (int) (this.getS()  - sq.getS());
+    }
+
+
 }

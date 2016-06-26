@@ -59,9 +59,10 @@ public class Rectangle extends MultiAngle {
     public String toString() {
         return "This is rectangle with: width = " + width + ", height = " + height;
     }
-     @Override
-    public boolean equals (Object r2){
-        Rectangle rect = (Rectangle) r2;
-        return this.width == rect.width && this.height == rect.height;
+
+    @Override
+    public boolean equals(Object obj) {
+        Rectangle r = (Rectangle) obj;
+        return this.width == r.width && this.height == r.height;
     }
 }
